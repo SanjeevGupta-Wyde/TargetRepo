@@ -1,0 +1,12 @@
+pipeline {
+    agent { node "'any'" }
+    stages {
+        stage('Preparation of tests: creat a list of stages') {
+            steps {
+                script {
+                    bat "ECHO TEST"
+                }                    
+            }
+        }
+    }
+}
